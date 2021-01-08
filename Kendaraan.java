@@ -38,4 +38,12 @@ public class Kendaraan
     {
         return plat;
     }
+    
+    public void DisplayKendaraan()
+    {
+        System.out.println("jenis Kendaraan : " + jenis);
+        System.out.println("warna Kendaraan : " + this.warna);
+        System.out.println("merek Kendaraan : " + this.merek);
+        System.out.println("nomot plat : "+ this.plat);
+    }
 }
