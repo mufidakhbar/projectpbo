@@ -16,4 +16,9 @@ public class Motor extends Kendaraan
     {
         this.hargaparkirmotor = super.uangawal - hargaparkirmotor;
     }
+    
+    public void printdetailsmotor()
+    {
+        super.DisplayKendaraan();
+    }
 }
