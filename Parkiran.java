@@ -72,5 +72,25 @@ public class Parkiran
         }
         return Parkiran.equals(plat);
     }
-
+    
+    public void tampilkandiparkiran() 
+    {
+        for(Kendaraan kendaraan : this.Parkiran){       
+            if(kendaraan.getJenis() == 1){
+                System.out.println("jenis Kendaraan : Mobil");
+            }else if(kendaraan.getJenis() == 2){
+                System.out.println("jenis Kendaraan : Motor");
+            }else{
+                System.out.println("jenis Kendaraan : truk");
+            }
+            kendaraan.DisplayKendaraan();
+            System.out.println("total uanngparkiran : " +  uangparkir);
+        }
+        
+        if(Parkiran.isEmpty() == true){
+            System.out.println("Parkiran sedang kosong");
+        }else{
+            System.out.println("Jumlah terisi : " + tempatTerisi());
+        }
+    }
 }
