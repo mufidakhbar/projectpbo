@@ -2,10 +2,10 @@ public class Truk extends Kendaraan
 {
     private int hargaparkirTruk = 10000;
 
-    public Truk()
-    {
-        
-    }
+   publik truk()
+   {
+   
+   }
 
     public Truk(String merek, String warna, String plat, int jenis)
     {
@@ -15,5 +15,10 @@ public class Truk extends Kendaraan
     public void bayarParkirTruk(int hargaparkirTruk)
     {
         this.hargaparkirTruk = super.uangawal - hargaparkirTruk;
+    }
+    
+    public void printdetailtruk()
+    {
+        super.DisplayKendaraan();
     }
 }
